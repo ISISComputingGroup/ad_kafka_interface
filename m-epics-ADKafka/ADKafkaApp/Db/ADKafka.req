@@ -1,0 +1,2 @@
+# Nothing extra needed beyond NDPluginBase_settings.req for now
+file "ADBase_settings.req", P=$(P), R=$(R)
