@@ -10,12 +10,12 @@
 #include <epicsTime.h>
 #include <iocsh.h>
 
-#include "KafkaDriver.h"
 #include "NDArrayDeSerializer.h"
 #include <asynDriver.h>
 #include <ciso646>
 #include <cassert>
 #include <epicsExport.h>
+#include "KafkaDriver.h"
 
 static const char *driverName = "KafkaDriver";
 

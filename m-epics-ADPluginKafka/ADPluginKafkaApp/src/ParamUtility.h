@@ -83,7 +83,7 @@ int InitPvParams(asynNDArrType *driverPtr, std::vector<PV_param> &paramList) {
  */
 template <class asynNDArrType>
 asynStatus setParam(asynNDArrType *driverPtr, const PV_param &param, const std::string value) {
-    if (nullptr == driverPtr or 0 == *param.index) {
+    if (nullptr == driverPtr || 0 == *param.index) {
         return asynStatus::asynError;
     }
     asynStatus retStatus;
@@ -108,7 +108,7 @@ asynStatus setParam(asynNDArrType *driverPtr, const PV_param &param, const std::
  */
 template <typename asynNDArrType>
 asynStatus setParam(asynNDArrType *driverPtr, const PV_param &param, const int value) {
-    if (nullptr == driverPtr or 0 == *param.index) {
+    if (nullptr == driverPtr || 0 == *param.index) {
         return asynStatus::asynError;
     }
     asynStatus retStatus;
