@@ -24,7 +24,7 @@ void KafkaPlugin::processCallbacks(NDArray *pArray) {
     /// @todo Check the order of these calls and if all of them are needed.
     NDArrayInfo_t arrayInfo;
 
-    NDPluginDriver::processCallbacks(pArray);
+    NDPluginDriver::beginProcessCallbacks(pArray);
 
     pArray->getInfo(&arrayInfo);
 
