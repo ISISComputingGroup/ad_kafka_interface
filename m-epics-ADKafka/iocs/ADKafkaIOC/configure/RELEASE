@@ -3,24 +3,24 @@
 # top directory each time this file is changed.
 
 # top level master release and local private options
-include $(TOP)/../../../../../../configure/MASTER_RELEASE
--include $(TOP)/../../../../../../configure/MASTER_RELEASE.$(EPICS_HOST_ARCH)
--include $(TOP)/../../../../../../configure/MASTER_RELEASE.private
--include $(TOP)/../../../../../../configure/MASTER_RELEASE.private.$(EPICS_HOST_ARCH)
+
+
+AREA_DETECTOR = $(SUPPORT)/areaDetector/master
+ADPLUGINKAFKA = $(TOP)/../..
+SIMDET = $(AREA_DETECTOR)/ADSimDetector
+ZLIB = $(SUPPORT)/zlib/master
+LIBRDKAFKA = $(SUPPORT)/librdkafka/master
+OPENSSL = $(SUPPORT)/OpenSSL/master
+FLATBUFFERS = $(SUPPORT)/flatbuffers/master
+
+-include $(TOP)/../../../configure/RELEASE_PRODS_INCLUDE
+-include $(TOP)/RELEASE.local
+-include $(TOP)/configure/RELEASE.local
 
 include $(TOP)/../../../../../../ISIS_CONFIG
--include $(TOP)/../../../../../../ISIS_CONFIG.$(EPICS_HOST_ARCH)
 
 include $(AREA_DETECTOR)/configure/RELEASE_PATHS.local
 -include $(AREA_DETECTOR)/configure/RELEASE_PATHS.local.$(EPICS_HOST_ARCH)
 include $(AREA_DETECTOR)/configure/RELEASE_LIBS.local
 -include $(TOP)/RELEASE.local
 -include $(TOP)/configure/RELEASE.local
-
-ADPLUGINKAFKA = $(TOP)/../..
-SIMDET = $(AREA_DETECTOR)/ADSimDetector
-
--include $(TOP)/../../../configure/RELEASE_PRODS_INCLUDE
--include $(TOP)/RELEASE.local
--include $(TOP)/configure/RELEASE.local
-
