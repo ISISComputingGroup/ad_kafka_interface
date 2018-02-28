@@ -11,6 +11,11 @@ ZLIB = $(SUPPORT)/zlib/master
 LIBRDKAFKA = $(SUPPORT)/librdkafka/master
 OPENSSL = $(SUPPORT)/OpenSSL/master
 FLATBUFFERS = $(SUPPORT)/flatbuffers/master
+BUSY = $(SUPPORT)/busy/master
+SSCAN = $(SUPPORT)/sscan/master
+CALC = $(SUPPORT)/calc/master
+AUTOSAVE = $(SUPPORT)/autosave/master
+DEVIOCSTATS = $(SUPPORT)/devIocStats/master
 
 -include $(TOP)/../../../configure/RELEASE_PRODS_INCLUDE
 -include $(TOP)/RELEASE.local
