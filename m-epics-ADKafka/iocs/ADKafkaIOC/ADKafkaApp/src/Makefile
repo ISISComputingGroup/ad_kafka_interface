@@ -23,7 +23,7 @@ PROD_SRCS_vxWorks += $(PROD_NAME)_registerRecordDeviceDriver.cpp
 
 PROD_LIBS += ADKafka rdkafka++ rdkafka
 PROD_LIBS_WIN32 += ssleay32 libeay32
-PROD_LIBS_Linux += ssl crypto
+PROD_SYS_LIBS_Linux += ssl crypto
 PROD_SYS_LIBS_Linux += sasl2
 
 include $(ADCORE)/ADApp/commonDriverMakefile
