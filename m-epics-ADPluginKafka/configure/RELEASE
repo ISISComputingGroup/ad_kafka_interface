@@ -11,8 +11,9 @@ ZLIB = $(SUPPORT)/zlib/master
 LIBRDKAFKA = $(SUPPORT)/librdkafka/master
 OPENSSL = $(SUPPORT)/OpenSSL/master
 FLATBUFFERS = $(SUPPORT)/flatbuffers/master
+
 include $(TOP)/../../../../ISIS_CONFIG
 
-include $(AREA_DETECTOR)/configure/RELEASE_PATHS.local
--include $(AREA_DETECTOR)/configure/RELEASE_PATHS.local.$(EPICS_HOST_ARCH)
+include $(AREA_DETECTOR)/configure/RELEASE_SUPPORT.local
+-include $(AREA_DETECTOR)/configure/RELEASE_SUPPORT.local.$(EPICS_HOST_ARCH)
 include $(AREA_DETECTOR)/configure/RELEASE_LIBS.local
