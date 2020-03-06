@@ -9,7 +9,7 @@ endif
 ifeq ($(VS_OK),1)
 DIRS := $(DIRS) $(filter-out $(DIRS), configure)
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard *App))
-DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard *app))
+DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard AD*))
 ifeq ($(BUILD_IOCS), YES)
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard iocs))
 iocs_DEPEND_DIRS += ADKafkaApp

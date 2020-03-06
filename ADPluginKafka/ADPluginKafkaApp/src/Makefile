@@ -36,4 +36,4 @@ include $(TOP)/configure/RULES
 #  ADD EXTRA GNUMAKE RULES BELOW HERE
 
 $(COMMON_DIR)/NDArray_schema_generated.h : ../NDArray_schema.fbs $(FLATBUFFERS)/include/flatbuffers/flatbuffers.h
-	$(FLATBUFFERS)/bin/$(EPICS_HOST_ARCH)/flatc --cpp $<
+	$(FLATBUFFERS)/bin/$(EPICS_HOST_ARCH)/flatc --cpp -o $(COMMON_DIR)/ $<
