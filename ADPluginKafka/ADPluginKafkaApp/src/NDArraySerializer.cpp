@@ -96,6 +96,10 @@ FB_Tables::DType NDArraySerializer::GetFB_DType(NDDataType_t arrType) {
     return FB_Tables::DType::DType_int32;
   case NDUInt32:
     return FB_Tables::DType::DType_uint32;
+  case NDInt64:
+	  return FB_Tables::DType::DType_int64;
+  case NDUInt64:
+	  return FB_Tables::DType::DType_uint64;
   case NDFloat32:
     return FB_Tables::DType::DType_float32;
   case NDFloat64:
@@ -120,6 +124,10 @@ NDDataType_t NDArraySerializer::GetND_DType(FB_Tables::DType arrType) {
     return NDInt32;
   case FB_Tables::DType::DType_uint32:
     return NDUInt32;
+  case FB_Tables::DType::DType_int64:
+	  return NDInt64;
+  case FB_Tables::DType::DType_uint64:
+	  return NDUInt64;
   case FB_Tables::DType::DType_float32:
     return NDFloat32;
   case FB_Tables::DType::DType_float64:
@@ -144,6 +152,10 @@ FB_Tables::DType NDArraySerializer::GetFB_DType(NDAttrDataType_t attrType) {
     return FB_Tables::DType::DType_int32;
   case NDAttrUInt32:
     return FB_Tables::DType::DType_uint32;
+  case NDAttrInt64:
+	  return FB_Tables::DType::DType_int64;
+  case NDAttrUInt64:
+	  return FB_Tables::DType::DType_uint64;
   case NDAttrFloat32:
     return FB_Tables::DType::DType_float32;
   case NDAttrFloat64:
@@ -170,6 +182,10 @@ NDAttrDataType_t NDArraySerializer::GetND_AttrDType(FB_Tables::DType attrType) {
     return NDAttrInt32;
   case FB_Tables::DType::DType_uint32:
     return NDAttrUInt32;
+  case FB_Tables::DType::DType_int64:
+	  return NDAttrInt64;
+  case FB_Tables::DType::DType_uint64:
+	  return NDAttrUInt64;
   case FB_Tables::DType::DType_float32:
     return NDAttrFloat32;
   case FB_Tables::DType::DType_float64:
