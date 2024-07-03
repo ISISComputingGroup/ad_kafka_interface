@@ -29,6 +29,7 @@ PROD_LIBS += rdkafka
 PROD_LIBS_WIN32 += libssl libcrypto
 PROD_SYS_LIBS_Linux += ssl crypto
 PROD_SYS_LIBS_Linux += sasl2
+PROD_SYS_LIBS_Linux += zstd
 
 include $(ADCORE)/ADApp/commonDriverMakefile
 
